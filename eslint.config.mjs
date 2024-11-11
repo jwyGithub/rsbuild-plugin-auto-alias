@@ -4,8 +4,8 @@ export default eslint({
     typescript: true,
     rules: {
         'style/indent-binary-ops': 'off',
-        'ts/no-unused-expressions': 'off'
+        'ts/no-unused-expressions': 'off',
+        'style/eol-last': 'off'
     },
-    ignores: ['dist', 'node_modules', 'playground'],
-    isInEditor: false
+    ignores: ['dist', 'node_modules', 'playground']
 });

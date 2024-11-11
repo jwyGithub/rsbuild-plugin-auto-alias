@@ -1,21 +1,24 @@
 {
-    "extends": "@jiangweiye/tsconfig/tsconfig.node.json",
     "compilerOptions": {
-        "target": "ES2020",
-        "lib": ["DOM", "ESNext"],
-        "baseUrl": "./",
         "paths": {
-            "@/*": ["src//*"],
-            "@utils/*": ["src/utils/*"],
-            "@views/*": ["src/views/*"]
-        },
-        "resolveJsonModule": true,
-        "strict": true,
-        "declaration": true,
-        "outDir": "./dist",
-        "esModuleInterop": true,
-        "isolatedModules": true,
-        "skipLibCheck": true
-    },
-    "include": ["./src"]
+            "@/*": [
+                "src/*"
+            ],
+            "@utils/*": [
+                "src/utils/*"
+            ],
+            "@views/*": [
+                "src/views/*"
+            ],
+            "#/*": [
+                "src/*"
+            ],
+            "#utils/*": [
+                "src/utils/*"
+            ],
+            "#views/*": [
+                "src/views/*"
+            ]
+        }
+    }
 }

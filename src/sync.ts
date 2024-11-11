@@ -1,7 +1,7 @@
 import type { SourceConfig } from '@rsbuild/core';
 import type { IJson, IPaths, Mode } from './type';
 import { readFileSync, writeFileSync } from 'node:fs';
-import { parse } from 'node:path';
+import path, { parse } from 'node:path';
 import { hasFile, removeComments } from './shared';
 
 /**
@@ -69,7 +69,7 @@ export function removePath(pathKey: string, source: IJson): IJson {
 export function convertToJsonPath(root: string, { find, prefix }: { find: string; prefix: string }): { key: string; value: string } {
     const { name } = parse(root);
     const pathKey = `${prefix}${find}/*`;
-    const pathValue = `${name}/${find}/*`.replace(new RegExp(`${prefix}`), '');
+    const pathValue = path.join(name, find, '*');
     return {
         key: pathKey,
         value: pathValue

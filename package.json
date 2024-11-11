@@ -2,7 +2,6 @@
     "name": "rsbuild-plugin-auto-alias",
     "type": "module",
     "version": "0.0.1",
-    "packageManager": "pnpm@9.12.3",
     "description": "automatically generate alias based on path",
     "author": "jiangweiye <jiangweiye@outlook.com> (https://github.com/jwyGithub)",
     "license": "MIT",

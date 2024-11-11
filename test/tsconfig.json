@@ -1,24 +1,12 @@
 {
     "compilerOptions": {
         "paths": {
-            "@/*": [
-                "src/*"
-            ],
-            "@utils/*": [
-                "src/utils/*"
-            ],
-            "@views/*": [
-                "src/views/*"
-            ],
-            "#/*": [
-                "src/*"
-            ],
-            "#utils/*": [
-                "src/utils/*"
-            ],
-            "#views/*": [
-                "src/views/*"
-            ]
+            "@/*": ["src/*"],
+            "@utils/*": ["src/utils/*"],
+            "@views/*": ["src/views/*"],
+            "#/*": ["src/*"],
+            "#utils/*": ["src/utils/*"],
+            "#views/*": ["src/views/*"]
         }
     }
 }

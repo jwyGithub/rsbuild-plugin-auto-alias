@@ -1,0 +1,72 @@
+{
+    "name": "rsbuild-plugin-auto-alias",
+    "type": "module",
+    "version": "0.0.1",
+    "packageManager": "pnpm@9.12.3",
+    "description": "automatically generate alias based on path",
+    "author": "jiangweiye <jiangweiye@outlook.com> (https://github.com/jwyGithub)",
+    "license": "MIT",
+    "homepage": "https://github.com/jwyGithub/rsbuild-plugin-auto-alias",
+    "keywords": [
+        "rsbuild",
+        "rsbuild-plugin",
+        "alias"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.cjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rslib build",
+        "dev": "rslib build --watch",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "prettier": "pnpx prettier --write .",
+        "lint-staged": "lint-staged",
+        "release": "standard-version",
+        "test": "playwright test"
+    },
+    "peerDependencies": {
+        "@rsbuild/core": "1.x"
+    },
+    "peerDependenciesMeta": {
+        "@rsbuild/core": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@jiangweiye/eslint-config": "^0.1.13",
+        "@jiangweiye/prettier-config": "^0.0.18",
+        "@jiangweiye/tsconfig": "^0.0.11",
+        "@playwright/test": "^1.48.2",
+        "@rsbuild/core": "^1.0.19",
+        "@rslib/core": "^0.0.16",
+        "@types/node": "^22.8.6",
+        "eslint": "^9.5.0",
+        "lint-staged": "^15.2.10",
+        "prettier": "^3.3.3",
+        "simple-git-hooks": "^2.11.1",
+        "typescript": "^5.6.3"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "pnpm lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,ts}": [
+            "pnpm lint",
+            "pnpm prettier"
+        ]
+    }
+}

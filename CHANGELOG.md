@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.0.2](https://github.com/jwyGithub/rsbuild-plugin-auto-alias/compare/v0.0.1...v0.0.2) (2024-11-11)
 
-
 ### Bug Fixes
 
-* root path parse error ([be0e0d4](https://github.com/jwyGithub/rsbuild-plugin-auto-alias/commit/be0e0d4e95f7e5093d4a63dc96fd696f4de2369e))
+-   root path parse error ([be0e0d4](https://github.com/jwyGithub/rsbuild-plugin-auto-alias/commit/be0e0d4e95f7e5093d4a63dc96fd696f4de2369e))
 
 ### 0.0.1 (2024-11-11)
 

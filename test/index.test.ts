@@ -13,7 +13,7 @@ test('should build succeed', async () => {
             plugins: [
                 pluginAutoAlias({
                     root: path.resolve(__dirname, '../playground/src'),
-                    aliasPath: path.resolve(__dirname, './tsconfig.json')
+                    aliasPath: path.resolve(__dirname, './tsconfig.alias.json')
                 })
             ]
         }
@@ -32,7 +32,7 @@ test('prefix', async () => {
             plugins: [
                 pluginAutoAlias({
                     root: path.resolve(__dirname, '../playground/src'),
-                    aliasPath: path.resolve(__dirname, './tsconfig.json'),
+                    aliasPath: path.resolve(__dirname, './tsconfig.alias.json'),
                     prefix: '#'
                 })
             ]

@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/jwyGithub/rsbuild-plugin-auto-alias/compare/v0.0.2...v0.0.3) (2024-11-11)
+
+
+### Features
+
+* update ([ddd9cdb](https://github.com/jwyGithub/rsbuild-plugin-auto-alias/commit/ddd9cdb8de74e94bedb01794976e004f4c21bc7c))
+
+
+### Bug Fixes
+
+* test ([078ea10](https://github.com/jwyGithub/rsbuild-plugin-auto-alias/commit/078ea10728977f9cae4c2c27781b4b778f755356))
+
 ### [0.0.2](https://github.com/jwyGithub/rsbuild-plugin-auto-alias/compare/v0.0.1...v0.0.2) (2024-11-11)
 
 

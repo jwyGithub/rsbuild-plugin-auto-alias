@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/jwyGithub/rsbuild-plugin-auto-alias/compare/v0.0.4...v0.0.5) (2024-11-20)
+
+
+### Bug Fixes
+
+* update build config ([8756457](https://github.com/jwyGithub/rsbuild-plugin-auto-alias/commit/8756457ffe1dc6b7f050d783122e4dc6ae536dfc))
+
 ### [0.0.4](https://github.com/jwyGithub/rsbuild-plugin-auto-alias/compare/v0.0.3...v0.0.4) (2024-11-11)
 
 
